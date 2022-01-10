@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Nexa';
+  src: url('../../fonts/Nexa\ Bold.otf') format('sans-serif');
+  src: url('../../fonts/Nexa\ Regular.otf') format('sans-serif');
+}
+
+$primary-text-color: #f7f7fa;
+$title-text-color: #202020;
+$background-color: #ffffff;
+$accent-color: #ff0000;
+
+$primary-text-family: Roboto;
+$secondary-text-family: Raleway;
+$firstly-text-family: Nexa;
+
+$time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);

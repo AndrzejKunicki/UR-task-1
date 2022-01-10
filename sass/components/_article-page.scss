@@ -1,0 +1,148 @@
+.article {
+  & .date {
+    color: #aca9bb;
+    font-family: 'Open Sans';
+    line-height: 23px;
+  }
+  & .news {
+    text-transform: uppercase;
+    color: #aca9bb;
+  }
+  & .title {
+    font-style: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+  & .author {
+    color: #333238;
+
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    & .name {
+      font-weight: 700;
+    }
+  }
+  & .items {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+    & li {
+      margin-left: 8px;
+    }
+  }
+  & .text {
+    font-style: 400px;
+    font-size: 14px;
+    line-height: 23px;
+    color: $title-text-color;
+  }
+  & .secondary-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #aca9bb;
+  }
+  & .list-img {
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & .list-items {
+    margin-top: 8px;
+  }
+  & .list-items:nth-child(2n + 1) {
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+  & .button-image {
+    position: relative;
+  }
+}
+
+.article-link {
+  fill: #333238;
+}
+.article-img {
+  margin-bottom: 24px;
+}
+.button-img {
+  position: absolute;
+  top: 35px;
+  right: 70px;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+}
+.quality,
+.quality-list {
+  margin: 0;
+}
+.quality-title {
+  margin-bottom: 8px;
+}
+.quality-item {
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 23px;
+  color: #202020;
+  margin-bottom: 8px;
+}
+.quality-item::before {
+  color: #aca9bb;
+  fill: #aca9bb;
+  content: '•';
+  padding-right: 10px;
+}
+.download {
+  display: flex;
+  align-items: center;
+}
+.download-img {
+  margin-right: 18px;
+  height: 20px;
+}
+.download-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #aca9bb;
+  text-decoration: underline;
+}
+.share-list-items {
+  display: flex;
+  & > li {
+    margin-right: 8px;
+  }
+}
+.share-link {
+  fill: #aca9bb;
+}
+.list-AI {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-AI {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333238;
+  border: 1px solid #aca9bb;
+  border-radius: 3px;
+  padding: 2px 15px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}

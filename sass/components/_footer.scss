@@ -1,0 +1,136 @@
+footer {
+  background-color: #08001e;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-box {
+  display: flex;
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+  }
+  padding-bottom: 80px;
+  border-bottom: 1px solid #f7f7fa;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: end;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 250px;
+  }
+}
+
+.logo-footer {
+  width: 150px;
+  height: 40px;
+
+  @media screen and (min-width: $tablet) {
+    width: 208px;
+    height: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 327px;
+    height: 87px;
+  }
+}
+
+.address {
+  font-family: $primary-text-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #f2f2f2;
+  width: 239px;
+  margin-left: auto;
+  margin-top: 20px;
+
+  @media screen and (max-width: 1023px) {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+.logo-box {
+  width: 342px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-list-title {
+  @media screen and (max-width: 1023px) {
+    margin-right: 24px;
+  }
+  font-weight: 300;
+  margin-right: 70px;
+
+  & > .list {
+    margin-top: 15px;
+  }
+}
+
+.red {
+  color: $accent-color;
+}
+
+.footer-box-links {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+  }
+}
+
+.footer-list-item {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
+
+  & > .list {
+    margin-right: 70px;
+  }
+}
+
+.copy {
+  @extend .address;
+  color: #8682b6;
+
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  margin: 0;
+
+  width: 364px;
+}
+
+footer .list-link {
+  display: flex;
+  justify-content: center;
+
+  & > .link {
+    @media screen and (max-width: 1023px) {
+      margin-right: 12px;
+      margin-bottom: 10px;
+    }
+    margin-right: 16px;
+  }
+}
+
+footer .social-link {
+  fill: $background-color;
+}

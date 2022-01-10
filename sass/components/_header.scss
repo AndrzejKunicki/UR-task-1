@@ -1,0 +1,145 @@
+header {
+  position: relative;
+}
+
+header .page-logo {
+  @media screen and (min-width: $tablet) {
+    width: 208px;
+    height: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 224px;
+    height: 60px;
+  }
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 17px 30px 17px 16px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 18px 44px;
+  }
+}
+
+header .link {
+  transition: color $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+header .menu-container {
+  align-items: center;
+}
+
+.menu-container > .list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+}
+
+.menu-button > svg {
+  align-items: center;
+  margin-left: 10px;
+}
+
+.list-link > li:not(:last-child) {
+  padding: 0;
+  margin-right: 8px;
+}
+
+.site-nav {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+}
+
+.site-nav .nav-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 168px;
+  }
+}
+
+.nav-list .item {
+  @media screen and (max-width: 767px) {
+    margin-top: 10px;
+    text-align: center;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.nav-list .link {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.73;
+
+  color: #828283;
+}
+
+.nav-list > .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 12px 10px 18px;
+
+  @media screen and (min-width: $tablet) {
+    &:hover,
+    &:focus {
+      border-radius: 4px;
+
+      background-color: $accent-color;
+    }
+
+    &:hover .link {
+      color: $background-color;
+    }
+  }
+
+  &::after {
+    @media screen and (min-width: $tablet) {
+      display: block;
+      content: '';
+      width: 10px;
+      height: 6px;
+      margin-left: 8px;
+      background-image: url('../../img/icons/Polygon1.svg');
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.contacts-list {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+header .social-link {
+  fill: #999999;
+}
+
+.contacts-list.list {
+  margin-left: auto;
+}
